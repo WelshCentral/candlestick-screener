@@ -1,7 +1,7 @@
 import talib
 import yfinance as yf
 
-data = yf.download("SPY", start="2020-01-01", end="2020-08-01")
+data = yf.download("SPY", start="2020-12-10", end="2021-12-10")
 
 morning_star = talib.CDLMORNINGSTAR(data['Open'], data['High'], data['Low'], data['Close'])
 
